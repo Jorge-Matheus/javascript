@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro</title>
+        <style>
+            body {
+                background-color: yellow;
+                color: blue;
+                font: normal 15pt Arial;
+
+            }
+            input {
+                font: normal 15pt Arial;
+                color: green;
+            }
+            div#res {
+                line-height: 35px;
+
+            }
+            div {
+                height: 30px;
+            }
+        
+        </style>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <div>- Brasileiro/Estrangeiro -</div>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="OK" onclick="teste()">
+    <div id="res">Resultado</div>
+    
+    <script> 
+        function teste()  {
+            var v1 = document.getElementById('txtpais')
+            r = document.getElementById('res')
+            var c = (v1.value)
+            if (c.toLowerCase() === 'brasil') {
+                r.innerText = 'Brasileiro'
+            } else {
+                r.innerText = 'Estrangeiro'
+            }
+        
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAST</title>
+    <style>
+        div#arena {
+            background-color: green;
+            color: aliceblue;
+            font: normal 30pt Arial;
+            width: 500px;
+            height: 200px;
+            line-height: 190px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="arena">Go Around</div>
+
+    <script>
+        var a = document.getElementById('arena')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function clicou() {
+        a.innerText = 'Clicou'
+        a.style.background = 'red'
+        }
+        function entrou() {
+            a.innerText = 'Entrou'
+        }
+        function saiu() {
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+
+
+    </script>
+</body>
+</html>

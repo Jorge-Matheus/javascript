@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            background-color: red;
+            color: yellow;
+            font: normal 20pt Arial;
+        }
+        input {
+            background-color: black;
+            color: white;
+            font: normal 20pt Arial;
+            width: 200px;
+
+
+        }
+        div#fora {
+            height: 40px;
+        }
+        div#res {
+            height: 30px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Velocidade!</h1>
+    <div id="fora">[-Limite de velocidade 60.5Km-]</div>
+    <input type="number" name="txtn1" id="txtn1"> KM/
+    <input type="button" value="OK!" onclick="multar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function multar() {
+            var t1 = document.getElementById('txtn1')
+            var r = document.getElementById 
+            ('res')
+            var perso = document.getElementById('fora')
+            var n1 = Number(t1.value)
+            var c = n1
+            if (c > 60.5) {
+                r.innerText = `${c}kM - Você Ultrapassou o limite permitido! MULTADO!`
+            } else {
+                r.innerHTML = `${c}kM - Você está na velocidade permitida, Dirijá com segurança! `
+            }
+
+        }
+        
+    </script>
+    
+</body>
+</html>

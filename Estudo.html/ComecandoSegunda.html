@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste KM</title>
+    <style>
+        body {
+                background-color: red;
+                color: yellow;
+                font: normal 22pt Arial;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+            font: normal 22pt Arial;
+            width: 200px;
+
+        }
+
+        div#fora {
+            height: 45px;
+        }
+
+        div#res {
+            line-height: 50px;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de -KM-</h1>
+    <div id="fora">[Limite de Velocidade - 60km/h.</div>
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="KM" onclick="multar()">
+    <div id="res">Resultado</div>
+    
+
+    <script>
+        function multar() {
+            var tnt1 = document.getElementById('txt2')
+            var r = document.getElementById
+            ('res')
+            var s = document.getElementById('fora')
+            var c = Number(tnt1.value)
+            var cond = c
+            if (cond > 60) {
+                r.innerText = `${cond}KM/h - Você Ultrapassou o límite de velocidade! MULTADO-`
+            } else {
+                r.innerText = `${cond}KM/h - Você está dentros dos Padrôes de velocidade! `
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
